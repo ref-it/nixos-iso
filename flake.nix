@@ -1,5 +1,5 @@
 {
-  description = "NixOS ISO of netali";
+  description = "NixOS ISO of the student council of the TU Ilmenau";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
