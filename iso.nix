@@ -9,6 +9,8 @@
     "profiles/base.nix"
   ];
 
+  nixpkgs.overlays = [ (import ./packages) ];
+
   networking.hostName = "stura-nixos-iso";
   isoImage.isoBaseName = "stura-nixos-iso";
 
@@ -67,6 +69,9 @@
     # Some compression/archiver tools.
     unzip
     zip
+
+    # own tools
+    stura-default-config
   ];
 
   time.timeZone = "Europe/Berlin";
