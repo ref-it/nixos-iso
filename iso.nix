@@ -71,6 +71,7 @@
     zip
 
     # own tools
+    stura-configure-net
     stura-default-config
   ];
 

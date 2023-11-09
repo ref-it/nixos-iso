@@ -20,6 +20,7 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in {
     packages = {
+      stura-configure-net = pkgs.callPackage ./packages/stura-configure-net {};
       stura-default-config = pkgs.callPackage ./packages/stura-default-config {};
     };
   });
