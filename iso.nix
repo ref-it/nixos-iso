@@ -11,6 +11,8 @@
 
   nixpkgs.overlays = [ (import ./packages) ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   networking.hostName = "stura-nixos-iso";
   isoImage.isoBaseName = "stura-nixos-iso";
 
