@@ -13,9 +13,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  image.baseName = "stura-nixos-iso";
-  networking.hostName = "stura-nixos-iso";
-  isoImage.isoBaseName = "stura-nixos-iso";
+  networking.hostName = "nixos-stura";
 
   boot.supportedFilesystems =
     [ "btrfs" "cifs" "f2fs" "jfs" "ntfs" "reiserfs" "vfat" "xfs" ] ++
