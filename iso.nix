@@ -13,6 +13,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  image.baseName = "stura-nixos-iso";
   networking.hostName = "stura-nixos-iso";
   isoImage.isoBaseName = "stura-nixos-iso";
 
